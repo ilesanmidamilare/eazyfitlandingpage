@@ -1,0 +1,115 @@
+.container {
+    padding: 16px;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: var(--font-clash-display);
+}
+
+.offerFirstParagraph {
+    font-size: 14.95px;
+    font-weight: 500;
+    background-color: var(--green100);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 100px;
+    
+}
+
+.offerSecondParagraph {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
+.offerThirdParagraph {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--green800);
+    margin: 20px 0;
+}
+
+.offerArrowsWrapper {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.arrow{
+    font-size: 65.23px;
+    background-color: var(--green100);
+    /* margin-right: 5px; */
+    border-radius: 100px;
+    padding: 20px;
+    box-shadow: 13px -2px 39px -22px rgba(0, 0, 0, 0.48);
+    -webkit-box-shadow: 13px -2px 39px -22px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 13px -2px 39px -22px rgba(0, 0, 0, 0.48);
+}
+
+.offerImageWrapper {
+    height: 570.58px;
+    background-color: var(--green500);
+}
+
+.offerImagesWrapper .offerImageWrapper:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.borderLine {
+    border: 1px solid rgba(52, 120, 86, 0.3);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.span {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--green900);
+}
+
+.offerImageDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.wearName {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.viewmoreText {
+    font-weight: 600;
+    font-size: 16px;
+    justify-self: flex-start;
+    color: var(--green500)
+}
+
+@media screen and (min-width: 900px) {
+    .offerImagesWrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 70px;
+    }
+
+    .offerImagesWrapper .offerImageWrapper:nth-child(even) {
+        margin-top: 50px;
+    }
+
+    .flexItems{
+        display: flex;
+    }
+
+    .offerSecondParagraph {
+        font-size: 56px;
+        
+    }
+
+    .offerThirdParagraph {
+        align-self: flex-end;
+        padding-bottom: 20px;
+    }
+
+    .offerArrowsWrapper {
+        text-align: right;
+        margin-top: 0px;
+    }
+}

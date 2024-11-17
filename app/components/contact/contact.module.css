@@ -1,0 +1,85 @@
+.contactBgImg{
+    height: 435.94px;
+    background-image: url('../../../public/mobile-contact-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-size: cover; */
+}
+
+
+.container {
+    padding: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: var(--font-clash-display);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+.contactInput {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--grey);
+    /* outline: none; */
+    background-color: var(--green100);
+    border-radius: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.contactButton {
+    white-space: nowrap;
+    padding: 0 50px;
+    border-radius: 100px;
+    background-color: var(--green500);
+    border: none;
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 14.95px;
+    font-family: var(--font-clash-display);
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+}
+
+.contactInputLabel {
+    font-weight: 500;
+    /* font-size: 16px; */
+}
+
+.logoWrapper {
+    text-align: center;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+}
+
+.contactParagraph {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (min-width: 900px){
+    .contactBgImg {
+        background-image: url('../../../public/web-contact-bg.png');
+        margin-bottom: 50px;
+    }
+
+    .container {
+        max-width: 450px;
+        margin-top: 0px;
+        padding-top: 70px;
+        margin-bottom: 0px;
+        
+    }
+
+    .contactParagraph {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}

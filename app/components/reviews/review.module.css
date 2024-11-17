@@ -1,0 +1,128 @@
+.addBgColor {
+    background-color: var(--green500);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container {
+    padding: 16px;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: var(--font-clash-display);
+    color: var(--white);
+}
+
+.reviewsTitleText {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reviewArrowsWrapper{
+    text-align: right;
+}
+
+.arrow {
+    font-size: 36.36px;
+   border: 1px solid var(--white);
+    /* margin-right: 5px; */
+    border-radius: 100px;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.active {
+    font-size: 36.36px;
+    background-color: var(--white);
+    /* margin-right: 5px; */
+    border-radius: 100px;
+    padding: 10px;
+    color: var(--green500);
+}
+
+.customerImgWrapper {
+    background-color: var(--green100);
+    height: 504px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.customerReviewText {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--green100);
+    line-height: 30px;
+    /* text-align: left; */
+    margin-bottom: 30px;
+}
+
+.borderLine {
+    border: 1.5px solid var(--white);
+}
+
+.customerDetailsWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20;
+
+}
+
+.customerDetail p:nth-child(2) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.customerDetail p:nth-child(3) {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 900px){
+    .reviewsTitleText {
+        font-size: 48px;
+        font-weight: 500;
+    }
+
+    .flexItems {
+        /* display: flex;
+        flex-direction: row-reverse; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 70px;
+    }
+
+    .columnReverse {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100% ;
+    }
+
+    .arrow {
+        font-size: 80px;
+        padding: 25px;
+    }
+
+    .active{
+        font-size: 80px;
+        padding: 25px;
+    }
+
+    .customerReviewText{
+        font-size: 32px;
+        line-height:50px;
+    }
+ 
+    .customerDetailsWrapper{
+        margin-top: 150px;
+        /* border: 1px solid red; */
+    }
+
+    .reviewArrowsWrapper {
+        text-align: center;
+    }
+    
+}

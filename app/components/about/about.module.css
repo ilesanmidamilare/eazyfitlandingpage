@@ -1,0 +1,148 @@
+.container {
+    padding: 16px;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: var(--font-clash-display);
+}
+
+.longArrow {
+    font-size: 50px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.aboutTitleWrapper {
+    display: flex;
+    align-items: center;
+    /* gap: 30px; */
+}
+
+.aboutTitleWrapper p:first-child {
+    font-size: 14.95px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.aboutTitleWrapper p:last-child {
+    font-size: 14.95px;
+    font-weight: 500;
+    background-color: var(--green100);
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.aboutFirstParagraph {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
+.aboutSecondParagraph {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--green800);
+    margin: 20px 0;
+}
+
+.whyUsTitleText {
+    padding-left: 40px;
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.whyUsLists {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+    color: var(--white);  
+}
+
+.whyUsList {
+    /* border: 1px solid red; */
+    padding: 40px;
+}
+
+
+.whyUsListFirstParagraph {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.whyUsListSecondParagraph {
+    color: var(--green200);
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.aboutSecondParagraph {
+    text-align: justify;
+}
+
+.addBgColorToWhyUs{
+    background-color: var(--green900);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.webWhyUsBg {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .whyUsLists {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+       
+    }
+
+    .whyUsTitleText{
+        display: none;
+    }
+
+    .webWhyUsBg {
+        display: block;
+        font-size: 35.87px;
+        font-weight: 500;
+        width: 200px;
+        height: 200px;
+        border-radius: 200px;
+        background-color: var(--green800);
+        position: relative;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+
+    .webWhyUsText {
+        color: var(--white);
+        position: absolute;
+        top: 70;
+        left: 30;
+        white-space: nowrap;
+
+    }
+
+    .whyUsList {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .flexItems {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr
+    }
+
+    .aboutFirstParagraph {
+        font-size: 57px;
+        /* border: 1px solid red; */
+    }
+     
+}
+
+
